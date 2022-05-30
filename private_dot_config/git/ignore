@@ -1,0 +1,12 @@
+.ropeproject/
+.vscode/
+.venv/
+.mypy_cache/
+requirements.local.txt
+__pycache__/
+*.pyc
+.DS_Store
+.*.swp
+.vim/
+.devcontainer/
+.python-version

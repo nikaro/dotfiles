@@ -1,0 +1,61 @@
+; vim: ft=gitconfig
+
+[user]
+	email = nicolas@karolak.fr
+	name = Nicolas Karolak
+	signingKey = ~/.ssh/id_ed25519
+[push]
+	default = simple
+	followTags = true
+	gpgSign = if-asked
+[commit]
+{{- if eq .chezmoi.username "nicolas" }}
+	gpgSign = true
+[gpg]
+	format = ssh
+{{ else }}
+	gpgSign = false
+{{ end -}}
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
+[help]
+	autocorrect = 1
+[includeIf "gitdir:~/Sources/gitlab.local-trust.com/"]
+	path = ~/.config/git/atexo
+[alias]
+	ll = log --oneline
+	lp = log --patch
+	st = status --short --branch
+	last = log -1 HEAD --stat
+	cm = commit --message
+	rv = remote --verbose
+	d = diff
+	dv = difftool --tool vimdiff --no-prompt
+	gl = config --global --list
+	se = !git rev-list --all | xargs git grep -F
+	wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
+	co = checkout
+[core]
+	excludesfile = ~/.config/git/ignore
+[sendemail]
+	smtpserver = /usr/bin/mail
+	annotate = yes
+[diff]
+	renameLimit = 5000
+[merge]
+	autoStash = true
+[fetch]
+	prune = true
+	pruneTags = true
+[remote "origin"]
+	prune = true
+	pruneTags = true
+[rebase]
+	autoStash = true

@@ -1,0 +1,21 @@
+# Global
+# vim: ft=sshconfig
+
+AddKeysToAgent			yes
+Compression			yes
+ControlMaster			auto
+ControlPersist			60
+HashKnownHosts			yes
+IdentityFile			~/.ssh/id_ed25519
+IdentityFile			~/.ssh/id_atexo_nka
+IdentityFile			~/.ssh/id_atexo_ansible
+IgnoreUnknown			UseKeychain
+PreferredAuthentications	publickey,keyboard-interactive,password
+ServerAliveInterval		30
+StrictHostKeyChecking		accept-new
+UseKeychain			yes
+VerifyHostKeyDNS		no
+
+Host localhost *.*.*.*
+	StrictHostKeyChecking	no
+	UserKnownHostsFile	/dev/null

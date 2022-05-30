@@ -1,0 +1,4 @@
+function prompt_hostname
+    # return the short hostname only by default (#4804)
+    echo {{ if eq .chezmoi.os "darwin" }}"local"{{ else }}"$hostname"{{ end }}
+end

@@ -1,0 +1,5 @@
+; vim: ft=gitconfig
+
+[user]
+	email = nicolas.karolak@atexo.com
+	signingKey = /Users/nicolas/.ssh/id_atexo_nka

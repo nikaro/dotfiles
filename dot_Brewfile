@@ -1,0 +1,56 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "nikaro/tap"
+brew "age"
+brew "diceware"
+brew "direnv"
+brew "fd"
+brew "fish"
+brew "freetds"
+brew "git"
+brew "git-lfs"
+brew "gnu-sed"
+brew "go"
+brew "graphviz"
+brew "grip"
+brew "hugo"
+brew "jq"
+brew "mas"
+brew "neovim"
+brew "packer"
+brew "poetry"
+brew "pre-commit"
+brew "pyenv"
+brew "pyenv-virtualenv"
+brew "ripgrep"
+brew "terraform"
+brew "tmux"
+brew "tree"
+brew "urlview"
+brew "watch"
+brew "yadm"
+brew "nikaro/tap/wireproxy"
+cask "arq"
+cask "browserosaurus"
+cask "docker"
+cask "drawio"
+cask "eloston-chromium"
+cask "iina"
+cask "mattermost"
+cask "openra"
+cask "steam"
+cask "visual-studio-code"
+cask "whatsapp"
+mas "AdGuard for Safari", id: 1440147259
+mas "CleanMyMac-MAS", id: 1339170533
+mas "Cyberduck", id: 409222199
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Parallels Desktop", id: 1085114709
+mas "Prime Video", id: 545519333
+mas "Reeder", id: 1529448980
+mas "Slack", id: 803453959
+mas "WireGuard", id: 1451685025
