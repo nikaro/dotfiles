@@ -15,6 +15,7 @@ map('n', ';o', 'm`o<esc>', {})                               -- insert newline b
 map('n', ';O', 'm`O<esc>', {})                               -- insert newline above
 map('n', ';U', ':PackerSync<cr>', {})                        -- update plugins
 map('' , ';c', '"+y', {})                                    -- copy to system clipboard
+map('' , '*',  'y/\\V<C-R>=escape(@","/\")<cr><cr>')
 
 -- Find files using Telescope
 map('n', ';ff', ':Telescope find_files<cr>', {})
