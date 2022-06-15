@@ -15,6 +15,7 @@ brew "git"
 brew "git-lfs"
 brew "gnu-sed"
 brew "go"
+brew "golangci-lint"
 brew "graphviz"
 brew "grip"
 brew "hugo"
@@ -56,5 +57,6 @@ mas "Parallels Desktop", id: 1085114709
 mas "Prime Video", id: 545519333
 mas "Reeder", id: 1529448980
 mas "Slack", id: 803453959
+mas "Textual IRC Client", id: 1262957439
 mas "WireGuard", id: 1451685025
 mas "xSearch", id: 1579902068
