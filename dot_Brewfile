@@ -6,6 +6,7 @@ tap "homebrew/services"
 tap "nikaro/tap"
 brew "age"
 brew "asciinema"
+brew "bat"
 brew "chezmoi"
 brew "diceware"
 brew "fd"
@@ -33,6 +34,7 @@ brew "pre-commit"
 brew "pyenv"
 brew "pyenv-virtualenv"
 brew "ripgrep"
+brew "smimesign"
 brew "terraform"
 brew "tmux"
 brew "tree"
@@ -47,7 +49,9 @@ cask "docker"
 cask "goland"
 cask "iina"
 cask "mattermost"
+cask "multipass"
 cask "pycharm"
+cask "secretive"
 cask "steam"
 cask "viscosity"
 cask "visual-studio-code"
@@ -58,9 +62,9 @@ mas "Keynote", id: 409183694
 mas "Minimalist", id: 1523397704
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Parallels Desktop", id: 1085114709
 mas "Prime Video", id: 545519333
 mas "Reeder", id: 1529448980
 mas "Slack", id: 803453959
+mas "Tailscale", id: 1475387142
 mas "Textual IRC Client", id: 1262957439
 mas "WireGuard", id: 1451685025
