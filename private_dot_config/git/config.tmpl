@@ -3,7 +3,6 @@
 [user]
 	email = nicolas@karolak.fr
 	name = Nicolas Karolak
-	signingKey = ~/.ssh/id_ed25519
 [push]
 	default = simple
 	followTags = true
@@ -12,7 +11,9 @@
 {{- if eq .chezmoi.username "nicolas" }}
 	gpgSign = true
 [gpg]
-	format = ssh
+	format = x509
+[gpg "x509"]
+	program = smimesign
 {{ else }}
 	gpgSign = false
 {{ end -}}
