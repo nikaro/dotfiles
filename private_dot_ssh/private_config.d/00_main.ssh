@@ -6,14 +6,10 @@ Compression			yes
 ControlMaster			auto
 ControlPersist			60
 HashKnownHosts			yes
-IdentityFile			~/.ssh/id_ed25519
-IdentityFile			~/.ssh/id_atexo_nka
-IdentityFile			~/.ssh/id_atexo_ansible
-IgnoreUnknown			UseKeychain
+IdentityAgent			~/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
 PreferredAuthentications	publickey,keyboard-interactive,password
 ServerAliveInterval		30
 StrictHostKeyChecking		accept-new
-UseKeychain			yes
 VerifyHostKeyDNS		no
 
 Host localhost *.*.*.*
