@@ -1,0 +1,28 @@
+#!/bin/sh
+# vim: ft=sh
+
+{{ if eq .chezmoi.os "darwin" -}}
+
+# install homebrew if it's missing
+if [ ! -f /opt/homebrew/bin/brew ]; then
+	echo "Installing homebrew"
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+# install brew packages
+if [ -f "$HOME/.Brewfile" ]; then
+	echo "Updating homebrew bundle"
+	brew bundle --global
+fi
+
+{{ end -}}
+
+# install tmux plugins manager
+if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
+	git clone --depth 1 https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
+fi
+
+# install neovim plugins manager
+if [ ! -d "$HOME/.local/share/nvim/site/pack/packer/start/packer.nvim" ]; then
+	git clone --depth 1 https://github.com/wbthomason/packer.nvim "$HOME/.local/share/nvim/site/pack/packer/start/packer.nvim"
+fi
