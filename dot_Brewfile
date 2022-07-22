@@ -21,9 +21,11 @@ brew "golangci-lint"
 brew "gopls"
 brew "graphviz"
 brew "grip"
+brew "helm"
 brew "hugo"
 brew "jq"
 brew "kubernetes-cli"
+brew "kubectx"
 brew "mas"
 brew "neovim"
 brew "node"
@@ -34,6 +36,7 @@ brew "pre-commit"
 brew "pyenv"
 brew "pyenv-virtualenv"
 brew "ripgrep"
+brew "scw"
 brew "smimesign"
 brew "terraform"
 brew "tmux"
@@ -51,6 +54,7 @@ cask "iina"
 cask "mattermost"
 cask "multipass"
 cask "pycharm"
+cask "rectangle"
 cask "secretive"
 cask "steam"
 cask "viscosity"
@@ -67,4 +71,5 @@ mas "Reeder", id: 1529448980
 mas "Slack", id: 803453959
 mas "Tailscale", id: 1475387142
 mas "Textual IRC Client", id: 1262957439
+mas "Vimari", id: 1480933944
 mas "WireGuard", id: 1451685025
