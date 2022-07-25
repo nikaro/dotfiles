@@ -1,7 +1,6 @@
 # Global
 # vim: ft=sshconfig
 
-AddKeysToAgent			yes
 Compression			yes
 ControlMaster			auto
 ControlPersist			60
