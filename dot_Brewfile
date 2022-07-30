@@ -12,6 +12,7 @@ brew "diceware"
 brew "fd"
 brew "fish"
 brew "freetds"
+brew "fzf"
 brew "gdu"
 brew "git"
 brew "git-lfs"
@@ -25,7 +26,6 @@ brew "helm"
 brew "hugo"
 brew "jq"
 brew "kubernetes-cli"
-brew "kubectx"
 brew "mas"
 brew "neovim"
 brew "node"
@@ -71,5 +71,6 @@ mas "Reeder", id: 1529448980
 mas "Slack", id: 803453959
 mas "Tailscale", id: 1475387142
 mas "Textual IRC Client", id: 1262957439
+mas "The Last Campfire", id: 973039644
 mas "Vimari", id: 1480933944
 mas "WireGuard", id: 1451685025
