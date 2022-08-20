@@ -18,4 +18,7 @@ return require('packer').startup(function()
     requires = {'nvim-lua/plenary.nvim'}
   }
 
+  -- Go dev tools
+  use 'ray-x/go.nvim'
+
 end)
