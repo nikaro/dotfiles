@@ -16,7 +16,6 @@ brew "git"
 brew "git-lfs"
 brew "go"
 brew "golangci-lint"
-brew "gopls"
 brew "helm"
 brew "hugo"
 brew "jq"
@@ -54,14 +53,13 @@ cask "whatsapp"
 mas "AdGuard for Safari", id: 1440147259
 mas "Cyberduck", id: 409222199
 mas "Keynote", id: 409183694
+mas "Little Orpheus", id: 1446279575
 mas "Minimalist", id: 1523397704
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Prime Video", id: 545519333
 mas "Reeder", id: 1529448980
 mas "Slack", id: 803453959
 mas "Tailscale", id: 1475387142
 mas "Textual IRC Client", id: 1262957439
-mas "The Last Campfire", id: 973039644
 mas "Vimari", id: 1480933944
 mas "WireGuard", id: 1451685025
