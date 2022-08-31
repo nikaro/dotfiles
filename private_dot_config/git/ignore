@@ -10,3 +10,4 @@ __pycache__/
 .vim/
 .devcontainer/
 .python-version
+pyrightconfig.json
