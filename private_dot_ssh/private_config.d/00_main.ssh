@@ -4,7 +4,7 @@
 Compression			yes
 ControlMaster			auto
 ControlPath			~/.ssh/tmp/%r@%h:%p.sock
-ControlPersist			60
+ControlPersist			10m
 HashKnownHosts			yes
 IdentityAgent			~/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
 PreferredAuthentications	publickey,keyboard-interactive,password
