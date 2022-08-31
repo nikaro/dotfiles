@@ -3,6 +3,13 @@ return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  -- Easily install and manage LSP servers, DAP servers, linters, and formatters
+  use 'williamboman/mason.nvim'
+  use 'williamboman/mason-lspconfig.nvim'
+
+  -- Configurations for Nvim LSP
+  use 'neovim/nvim-lspconfig'
+
   -- Interface for tree-sitter
   use {
     'nvim-treesitter/nvim-treesitter',
@@ -18,7 +25,10 @@ return require('packer').startup(function()
     requires = {'nvim-lua/plenary.nvim'}
   }
 
-  -- Go dev tools
-  use 'ray-x/go.nvim'
+  -- Remember last cursor position
+  use 'ethanholz/nvim-lastplace'
+
+  -- Manipulate surrounding delimiter pairs
+  use 'kylechui/nvim-surround'
 
 end)

@@ -3,7 +3,6 @@ local set = vim.opt
 set.completeopt = 'menuone,noselect'                       -- enable completion
 set.hidden = true                                          -- enabled unsaved buffers in background
 set.ignorecase = true                                      -- ignore capital letters during search
-set.laststatus= 3                                          -- global statusline
 set.listchars= 'eol:↵,trail:~,tab:> ,nbsp:␣'               -- customize characters in list mode
 set.number = true                                          -- enable line numbers
 set.relativenumber = true                                  -- use relative line numbers

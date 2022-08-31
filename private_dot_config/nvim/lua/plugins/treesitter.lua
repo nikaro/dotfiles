@@ -1,4 +1,4 @@
-require('nvim-treesitter.configs').setup({
+require('nvim-treesitter.configs').setup {
   -- Automatically install missing parsers when entering buffer
   auto_install = true,
 
@@ -12,4 +12,4 @@ require('nvim-treesitter.configs').setup({
     -- Instead of true it can also be a list of languages
     additional_vim_regex_highlighting = false,
   },
-})
+}
