@@ -1,6 +1,6 @@
-local set = vim.opt
+-- python filetype settings
 
-set.tabstop = 4
-set.shiftwidth = 4
-set.expandtab = true
-set.foldmethod = 'indent'
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.foldmethod = 'indent'

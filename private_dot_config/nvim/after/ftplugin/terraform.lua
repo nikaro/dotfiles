@@ -1,6 +1,6 @@
-local set = vim.opt
+-- terraform filetype settings
 
-set.tabstop = 2
-set.shiftwidth = 2
-set.expandtab = true
-set.foldmethod = 'indent'
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+vim.opt.foldmethod = 'indent'

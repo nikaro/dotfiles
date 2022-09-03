@@ -1,3 +1,5 @@
+-- mason plugin configuration
+
 require("mason").setup {
   ui = {
     icons = {

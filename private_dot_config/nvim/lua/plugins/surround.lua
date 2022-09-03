@@ -1,1 +1,3 @@
-require('nvim-surround').setup{}
+-- surround plugin configuration
+
+require('nvim-surround').setup {}

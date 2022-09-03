@@ -1,4 +1,4 @@
--- yaml filetype settings
+-- ansible filetype settings
 
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2

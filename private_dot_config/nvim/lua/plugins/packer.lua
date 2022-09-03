@@ -1,3 +1,5 @@
+-- packer plugin configuration
+
 return require('packer').startup(function()
 
   -- Packer can manage itself
