@@ -27,9 +27,6 @@ brew "mas"
 brew "mosh"
 brew "neovim"
 brew "node"
-brew "packer"
-brew "pip-tools"
-brew "poetry"
 brew "pre-commit"
 brew "pyenv"
 brew "pyenv-virtualenv"
@@ -46,16 +43,11 @@ brew "nikaro/tap/zabbixmon"
 cask "arq"
 cask "docker"
 cask "iina"
-cask "multipass"
 cask "rectangle"
 cask "secretive"
 cask "steam"
-cask "viscosity"
-cask "visual-studio-code"
 cask "whatsapp"
 mas "AdGuard for Safari", id: 1440147259
-mas "Keynote", id: 409183694
-mas "Little Orpheus", id: 1446279575
 mas "Minimalist", id: 1523397704
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
