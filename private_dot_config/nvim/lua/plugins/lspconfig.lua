@@ -21,7 +21,7 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', 'gy', vim.lsp.buf.type_definition, bufopts)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
   vim.keymap.set('n', '<space>a', vim.lsp.buf.code_action, bufopts)
-  vim.keymap.set('n', '<space>f',function() vim.lsp.buf.formatting { async = true } end, bufopts)
+  vim.keymap.set('n', '<space>=',function() vim.lsp.buf.formatting { async = true } end, bufopts)
   vim.keymap.set('n', '<space>r', vim.lsp.buf.rename, bufopts)
   vim.keymap.set('n', '<space>R', vim.lsp.buf.rename, {silent=true})
 end
