@@ -3,19 +3,20 @@
 [user]
 	email = nicolas@karolak.fr
 	name = Nicolas Karolak
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAID66RASIn4nrxeJ46c/Wt8KVTBS4om90LiF4UJea+jGQ
 [push]
 	default = simple
-	followTags = true
-	gpgSign = if-asked
+	followtags = true
+	gpgsign = if-asked
 [commit]
-{{- if eq .chezmoi.username "nicolas" }}
-	gpgSign = true
+	gpgsign = true
 [gpg]
-	format = x509
-[gpg "x509"]
-	program = smimesign
-{{ else }}
-	gpgSign = false
+	format = ssh
+[gpg "ssh"]
+{{- if eq .chezmoi.os "darwin" }}
+	program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+{{ else if eq .chezmoi.os "linux" }}
+	program = "/opt/1Password/op-ssh-sign"
 {{ end -}}
 [filter "lfs"]
 	clean = git-lfs clean -- %f
@@ -25,11 +26,9 @@
 [pull]
 	rebase = true
 [init]
-	defaultBranch = main
+	defaultbranch = main
 [help]
 	autocorrect = 1
-[includeIf "gitdir:~/Sources/gitlab.local-trust.com/"]
-	path = ~/.config/git/atexo
 [alias]
 	ll = log --oneline
 	lp = log --patch
@@ -43,20 +42,23 @@
 	se = !git rev-list --all | xargs git grep -F
 	wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
 	co = checkout
+	frbi = "!f() { git rebase -i $(git log --pretty=oneline --color=always | fzf --ansi | cut -d ' ' -f1)^ ; }; f"
 [core]
 	excludesfile = ~/.config/git/ignore
 [sendemail]
 	smtpserver = /usr/bin/mail
 	annotate = yes
 [diff]
-	renameLimit = 5000
+	renamelimit = 5000
 [merge]
 	autoStash = true
 [fetch]
 	prune = true
-	pruneTags = true
+	prunetags = true
 [remote "origin"]
 	prune = true
-	pruneTags = true
+	prunetags = true
 [rebase]
-	autoStash = true
+	autostash = true
+[includeIf "gitdir:~/Sources/gitlab.local-trust.com/"]
+	path = ~/.config/git/atexo
