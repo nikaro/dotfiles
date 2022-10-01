@@ -1,11 +1,9 @@
 -- neovim mappings
 
 -- go to previous buffer
-vim.keymap.set('n', 'K', ':bprevious<cr>', {silent = true})
 vim.keymap.set('n', 'gp', ':bprevious<cr>', {silent = true})
 
 -- go to next buffer
-vim.keymap.set('n', 'J', ':bnext<cr>', {silent = true})
 vim.keymap.set('n', 'gn', ':bnext<cr>', {silent = true})
 
 -- go to last buffer
@@ -24,9 +22,6 @@ vim.keymap.set('v', '<space>Y', '"+y')
 -- past from clipboard
 vim.keymap.set('n', '<space>p', '"+p')
 vim.keymap.set('n', '<space>P', '"+P')
-
--- find all occurences of selection
-vim.keymap.set('v', '*', 'y/\\V<C-R>=escape(@","/\")<cr><cr>')
 
 -- list files in the current workdir
 vim.keymap.set('n', '<space>f', ':Telescope find_files<cr>', {silent=true})
@@ -55,4 +50,8 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, {silent=true})
 -- go to next diagnostic
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, {silent=true})
 
+-- open lsp installer mason
 vim.keymap.set('n', '<space>M', ':Mason<cr>', {silent=true})
+
+-- make * stay at the cursor position
+vim.keymap.set('n', '*', '*``', {silent=true, noremap=true})

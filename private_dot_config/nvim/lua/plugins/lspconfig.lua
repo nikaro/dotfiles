@@ -66,6 +66,11 @@ require('lspconfig').pyright.setup {
   on_attach = on_attach,
 }
 
+-- Ruby
+require('lspconfig').solargraph.setup{
+  on_attach = on_attach,
+}
+
 -- Terraform
 require('lspconfig').terraformls.setup {
   on_attach = on_attach,
