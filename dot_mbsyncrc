@@ -1,0 +1,23 @@
+IMAPAccount icloud
+    Host imap.mail.me.com
+    Port 993
+    Timeout 0
+    SSLType IMAPS
+    SSLVersions TLSv1.3
+    AuthMechs LOGIN
+    User nicolas.karolak
+    PassCmd "op item get 63gd6rgbwq5smzag26g3o2kpwq --field label=mbp-mbsync"
+
+IMAPStore icloud-remote
+    Account icloud
+
+MaildirStore icloud-local
+    Path ~/Mail/iCloud/
+    Inbox ~/Mail/iCloud/INBOX
+
+Channel icloud
+    Far :icloud-remote:
+    Near :icloud-local:
+    Create Both
+    SyncState *
+    Patterns *
