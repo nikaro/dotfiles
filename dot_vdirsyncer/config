@@ -1,0 +1,38 @@
+[general]
+status_path = "~/.vdirsyncer/status/"
+
+[storage cal_icloud_remote]
+type = "caldav"
+url = "https://p39-caldav.icloud.com/"
+username = "nicolas.karolak@icloud.com"
+password.fetch = ["command", "op", "item", "get", "63gd6rgbwq5smzag26g3o2kpwq", "--field", "label=mbp-vdirsyncer"]
+item_types = ["VEVENT"]
+
+[storage cal_icloud_local]
+type = "filesystem"
+path = "~/Agenda/iCloud/"
+fileext = ".ics"
+
+[pair cal_icloud]
+a = "cal_icloud_remote"
+b = "cal_icloud_local"
+collections = ["from a", "from b"]
+conflict_resolution = "a wins"
+metadata = ["displayname", "color"]
+
+[storage card_icloud_remote]
+type = "carddav"
+url = "https://contacts.icloud.com/"
+username = "nicolas.karolak@icloud.com"
+password.fetch = ["command", "op", "item", "get", "63gd6rgbwq5smzag26g3o2kpwq", "--field", "label=mbp-vdirsyncer"]
+
+[storage card_icloud_local]
+type = "filesystem"
+path = "~/Contacts/iCloud/"
+fileext = ".vcf"
+
+[pair card_icloud]
+a = "card_icloud_remote"
+b = "card_icloud_local"
+collections = ["from a", "from b"]
+conflict_resolution = "a wins"
