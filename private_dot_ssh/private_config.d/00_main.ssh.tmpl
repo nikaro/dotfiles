@@ -6,7 +6,11 @@ ControlMaster			auto
 ControlPath			~/.ssh/tmp/%r@%h:%p.sock
 ControlPersist			10m
 HashKnownHosts			yes
-IdentityAgent			~/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
+{{- if eq .chezmoi.os "darwin" }}
+IdentityAgent			"~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+{{ else if eq .chezmoi.os "linux" }}
+IdentityAgent			~/.1password/agent.sock
+{{ end -}}
 PreferredAuthentications	publickey,keyboard-interactive,password
 ServerAliveInterval		30
 StrictHostKeyChecking		accept-new
