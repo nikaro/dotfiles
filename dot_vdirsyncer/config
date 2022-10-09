@@ -16,7 +16,7 @@ fileext = ".ics"
 [pair cal_icloud]
 a = "cal_icloud_remote"
 b = "cal_icloud_local"
-collections = ["from a", "from b"]
+collections = ["from a"]
 conflict_resolution = "a wins"
 metadata = ["displayname", "color"]
 
@@ -34,5 +34,5 @@ fileext = ".vcf"
 [pair card_icloud]
 a = "card_icloud_remote"
 b = "card_icloud_local"
-collections = ["from a", "from b"]
+collections = ["from a"]
 conflict_resolution = "a wins"
