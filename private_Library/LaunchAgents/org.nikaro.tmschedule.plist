@@ -6,7 +6,7 @@
     <string>org.nikaro.tmschedule</string>
 
     <key>Program</key>
-    <string>~/.local/bin/tmschedule.rb</string>
+    <string>/usr/local/bin/tmschedule.rb</string>
 
     <key>RunAtLoad</key>
     <true/>
