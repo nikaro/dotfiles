@@ -10,7 +10,6 @@ brew "bat"
 brew "chezmoi"
 brew "fd"
 brew "fish"
-brew "freetds"
 brew "fzf"
 brew "gdu"
 brew "gh"
@@ -21,30 +20,25 @@ brew "golangci-lint"
 brew "helix"
 brew "helm"
 brew "hugo"
-brew "isync", restart_service: true
+brew "isync"
 brew "jq"
-brew "k9s"
 brew "kubernetes-cli"
 brew "mas"
-brew "mosh"
 brew "neovim"
 brew "node"
-brew "p7zip"
 brew "pre-commit"
 brew "pyenv"
 brew "pyenv-virtualenv"
 brew "ripgrep"
 brew "scw"
-brew "smimesign"
 brew "terraform"
 brew "tmux"
 brew "tree"
 brew "urlview"
-brew "vdirsyncer", restart_service: true
+brew "vdirsyncer"
 brew "wget"
 brew "git-chglog/git-chglog/git-chglog"
 brew "nikaro/tap/devc"
-brew "nikaro/tap/zabbixmon"
 cask "1password"
 cask "1password-cli"
 cask "arq"
@@ -52,14 +46,11 @@ cask "docker"
 cask "iina"
 cask "rectangle"
 cask "secretive"
-cask "steam"
 cask "syncthing"
 mas "1Password for Safari", id: 1569813296
-mas "Hidden Bar", id: 1452453066
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Passepartout", id: 1433648537
 mas "Reeder", id: 1529448980
-mas "Slack", id: 803453959
 mas "Tailscale", id: 1475387142
 mas "Wipr", id: 1320666476
-mas "WireGuard", id: 1451685025
