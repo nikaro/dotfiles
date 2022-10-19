@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+require 'optparse'
+require 'pp'
 require 'yaml'
 
 HOUR = 3600
@@ -109,6 +111,20 @@ class TMSchedule
   end
 end
 
+options = {}
+OptionParser.new do |opts|
+  opts.banner = "Usage: tmschedule.rb [command]"
+  opts.on("-l", "--list", "List snaphosts") do |list|
+    options[:list] = list
+  end
+end.parse!
+
 tms = TMSchedule.new
-tms.make_snapshot
-tms.prune_snapshots
+
+if options[:list]
+  snaps = tms.list_snapshots
+  pp snaps
+else
+  tms.make_snapshot
+  tms.prune_snapshots
+end
