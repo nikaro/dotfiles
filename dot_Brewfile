@@ -26,6 +26,7 @@ brew "kubernetes-cli"
 brew "mas"
 brew "neovim"
 brew "node"
+brew "poetry"
 brew "pre-commit"
 brew "pyenv"
 brew "pyenv-virtualenv"
@@ -43,11 +44,15 @@ cask "1password"
 cask "1password-cli"
 cask "arq"
 cask "docker"
+cask "google-cloud-sdk"
 cask "iina"
 cask "rectangle"
 cask "secretive"
 cask "syncthing"
 mas "1Password for Safari", id: 1569813296
+mas "Caffeinated", id: 1362171212
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Passepartout", id: 1433648537
