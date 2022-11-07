@@ -47,6 +47,9 @@ return require('packer').startup(function()
   -- Manipulate surrounding delimiter pairs
   use 'kylechui/nvim-surround'
 
+  -- Displays a popup with possible keybindings
+  use 'folke/which-key.nvim'
+
   -- parse devcontainer file
   if vim.fn.filereadable('.devcontainer/devcontainer.json') == 1 and vim.fn.filereadable('/.dockerenv') == 1 then
     local devcontainer = vim.fn.json_decode(vim.fn.readfile('.devcontainer/devcontainer.json'))
