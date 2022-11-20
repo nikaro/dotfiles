@@ -50,6 +50,9 @@ return require('packer').startup(function()
   -- Displays a popup with possible keybindings
   use 'folke/which-key.nvim'
 
+  -- Auto change color/background based on system theme
+  use 'f-person/auto-dark-mode.nvim'
+
   -- parse devcontainer file
   if vim.fn.filereadable('.devcontainer/devcontainer.json') == 1 and vim.fn.filereadable('/.dockerenv') == 1 then
     local devcontainer = vim.fn.json_decode(vim.fn.readfile('.devcontainer/devcontainer.json'))

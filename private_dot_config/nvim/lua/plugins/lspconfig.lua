@@ -75,6 +75,9 @@ require('lspconfig').solargraph.setup{
 require('lspconfig').terraformls.setup {
   on_attach = on_attach,
 }
+require('lspconfig').tflint.setup {
+  on_attach = on_attach,
+}
 
 -- YAML
 require('lspconfig').yamlls.setup {

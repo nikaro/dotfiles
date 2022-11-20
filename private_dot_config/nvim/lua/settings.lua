@@ -27,5 +27,3 @@ vim.opt.statusline:append(' (%p%%)')                           -- show percentag
 vim.opt.undofile = true                                        -- enable undofile
 vim.opt.wrap = false                                           -- do not wrap lines
 vim.opt.wildmode='longest,full'                                -- complete till longest common string, then start wildmenu
-
-vim.cmd('colorscheme peachpuff')                           -- set custom colorscheme
