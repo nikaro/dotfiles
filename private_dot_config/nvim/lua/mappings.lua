@@ -21,3 +21,4 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, {silent=true, desc='Go to pr
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, {silent=true, desc='Go to next diagnostic'})
 vim.keymap.set('n', '<space>M', ':Mason<cr>', {silent=true, desc='Open lsp installer mason'})
 vim.keymap.set('n', '*', '*``', {silent=true, noremap=true, desc='Make * stay at the cursor position'})
+vim.keymap.set('n', '<space>B', ':let &background = ( &background == "dark" ? "light" : "dark" )<cr>', {silent=true, desc='Switch background color'})
