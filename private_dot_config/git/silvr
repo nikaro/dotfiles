@@ -1,5 +1,9 @@
 ; vim: ft=gitconfig
 
+[commit]
+	template = ~/.config/git/silvr-commit-msg
+[core]
+	commentchar = ";"
 [user]
 	email = nicolas.karolak@silvr.co
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAID66RASIn4nrxeJ46c/Wt8KVTBS4om90LiF4UJea+jGQ

@@ -1,0 +1,28 @@
+
+
+### What
+
+; Explain what this PR is about.
+
+### Why
+
+; Explain why this is needed. Do not hesitate to give plenty of contexts, link to a Notion task or issue, previous PRs, screenshots, gifs.
+
+### How
+
+; Please describe how you achieved your goal, what are the problems you encountered and how you circumvented them.
+
+### Impact
+
+; What is the impact of this PR on other parts or components of the stack?
+; Is there something specific to keep in mind once this PR is merged & deployed?
+; Are there parts of the problem that this PR addresses that are still unresolved?
+
+### Tests
+
+; How was this PR tested? Should we run extensive smoke tests on staging before putting it in production?
+
+---
+
+; Add Issue fixed if relevant
+; Fixes #
