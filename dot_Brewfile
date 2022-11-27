@@ -4,6 +4,7 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "nikaro/tap"
+brew "act"
 brew "age"
 brew "asciinema"
 brew "bash"
@@ -55,12 +56,12 @@ cask "arq"
 cask "docker"
 cask "google-cloud-sdk"
 cask "iina"
-cask "rectangle"
 cask "secretive"
 cask "syncthing"
+cask "vlc"
 mas "1Password for Safari", id: 1569813296
+mas "Affinity Designer 2", id: 1616831348
 mas "Caffeinated", id: 1362171212
-mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
