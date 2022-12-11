@@ -4,14 +4,15 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "nikaro/tap"
-brew "act"
 brew "age"
+brew "node"
+brew "ansible-language-server"
 brew "asciinema"
 brew "bash"
+brew "bash-language-server"
 brew "bat"
 brew "checkov"
 brew "chezmoi"
-brew "container-diff"
 brew "fd"
 brew "fish"
 brew "fzf"
@@ -21,6 +22,7 @@ brew "git"
 brew "git-lfs"
 brew "go"
 brew "golangci-lint"
+brew "gopls"
 brew "helix"
 brew "helm"
 brew "hugo"
@@ -31,16 +33,19 @@ brew "k9s"
 brew "kubernetes-cli"
 brew "mas"
 brew "neovim"
-brew "node"
 brew "poetry"
 brew "pre-commit"
 brew "pyenv"
 brew "pyenv-virtualenv"
+brew "python-lsp-server"
 brew "ripgrep"
 brew "scw"
 brew "shellcheck"
 brew "sops"
+brew "taplo"
 brew "terraform"
+brew "terraform-docs"
+brew "terraform-ls"
 brew "tfk8s"
 brew "tflint"
 brew "tmux"
@@ -49,6 +54,7 @@ brew "urlview"
 brew "vdirsyncer"
 brew "watch"
 brew "wget"
+brew "yaml-language-server"
 brew "youtube-dl"
 brew "git-chglog/git-chglog/git-chglog"
 brew "nikaro/tap/devc"
@@ -64,9 +70,11 @@ mas "1Password for Safari", id: 1569813296
 mas "Affinity Designer 2", id: 1616831348
 mas "Caffeinated", id: 1362171212
 mas "Keynote", id: 409183694
+mas "NextDNS", id: 1464122853
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Passepartout", id: 1433648537
 mas "Reeder", id: 1529448980
+mas "Slack", id: 803453959
 mas "Tailscale", id: 1475387142
+mas "WhatsApp", id: 1147396723
 mas "Wipr", id: 1320666476
