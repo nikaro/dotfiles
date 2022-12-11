@@ -64,6 +64,7 @@ cask "arq"
 cask "docker"
 cask "google-cloud-sdk"
 cask "iina"
+cask "iterm2"
 cask "secretive"
 cask "syncthing"
 mas "1Password for Safari", id: 1569813296
