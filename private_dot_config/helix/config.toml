@@ -1,0 +1,11 @@
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.file-picker]
+hidden = false
+max-depth = 5
+
+[editor.statusline]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
