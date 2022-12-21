@@ -56,6 +56,7 @@ brew "vdirsyncer"
 brew "watch"
 brew "wget"
 brew "yaml-language-server"
+brew "yamllint"
 brew "youtube-dl"
 brew "git-chglog/git-chglog/git-chglog"
 brew "nikaro/tap/devc"
@@ -81,5 +82,6 @@ mas "Pages", id: 409201541
 mas "Reeder", id: 1529448980
 mas "Slack", id: 803453959
 mas "Tailscale", id: 1475387142
+mas "Vinegar", id: 1591303229
 mas "WhatsApp", id: 1147396723
 mas "Wipr", id: 1320666476
