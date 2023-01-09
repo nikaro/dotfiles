@@ -1,4 +1,9 @@
 [[language]]
+name = "bash"
+auto-format = true
+formatter = { command = "shfmt", args = ["--indent", "2"] }
+
+[[language]]
 name = "hcl"
 roots = [".terraform.lock.hcl", ".git"]
 
